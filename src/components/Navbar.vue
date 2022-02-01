@@ -1,7 +1,7 @@
 <template>
 	<header>
 		<h1>The Dojo Blog</h1>
-		<nav class="navigation">
+		<nav>
 			<router-link :to="{ name: 'Home'}">
 				<h3>Home</h3>
 			</router-link>
@@ -12,30 +12,26 @@
 	</header>
 </template>
 
-<style scoped>
+<style>
 header {
 	display: flex;
-	max-width: 1200px;
-	align-items: center;
 	justify-content: space-between;
-	margin: 0 auto;
-}
-.navigation {
-	display: flex;
 	align-items: center;
-	justify-content: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
 }
-
-.navigation h3 {
-	margin: 0;
+header h1 {
+	color: #dfdfdf;
+	font-size: 48px;
 }
-
-.navigation a {
+header a {
+	color: #bbb;
 	text-decoration: none;
-	color: #fff;
-	background: #ff8800;
-	padding: 5px 10px;
-	margin: 0 10px;
-	border-radius: 5px;
+	margin-left: 20px;
+}
+header a.router-link-active {
+	color: #444;
+	font-weight: bold;
 }
 </style>

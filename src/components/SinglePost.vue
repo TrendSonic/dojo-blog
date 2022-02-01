@@ -28,10 +28,10 @@ export default {
 
 <style>
 .post {
-    margin: 0 40px 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #e7e7e7;
-  }
+	margin: 0 40px 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px dashed #e7e7e7;
+}
 
 .post h3 {
 	display: inline-block;
